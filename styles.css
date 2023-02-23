@@ -3,9 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 12px;
 }
-
-
 
 nav {
     padding: 20px;
@@ -22,7 +21,19 @@ nav {
     display: none;
 }
 
+.section-1 {
+    padding: 50px 25px;
+    display: flex;
+} 
 
+#graphic {
+    height: 200px;
+}
+
+.launch {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Desktop */
 
