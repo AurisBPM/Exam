@@ -5,9 +5,45 @@
     font-family: sans-serif;
 }
 
+
+
 nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo {
+    height: 25px;
+}
+
+.nav-b {
+    display: none;
+}
+
+
+
+/* Desktop */
+
+@media ( min-width: 370px){
+    .nav-b {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-b a{
+        text-decoration: none;
+        color: gray;
+        font-size: 12px;
+    }
+
+    .nav-b a:last-child{
+        text-decoration: none;
+        color: rgb(239, 94, 142);
+    }
+
+    .nav-a {
+        display: none;
+    }
 }
