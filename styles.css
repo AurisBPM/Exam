@@ -6,6 +6,8 @@
     font-size: 12px;
 }
 
+
+
 nav {
     padding: 20px;
     display: flex;
@@ -48,8 +50,19 @@ h1 {
 
 .button-sign {
     padding: 10px 20px;
-    border-radius: 20px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #c924c4, orange, #95ed55) border-box;
+border-radius: 50px;
+border: 2px solid transparent;
 }
+
+.section-2 {
+    padding: 50px 25px 25px 25px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+background: linear-gradient(45deg, #c924c4, orange, #95ed55);
+} 
 
 /* Desktop */
 
@@ -73,4 +86,13 @@ h1 {
     .nav-a {
         display: none;
     }
+
+    .section-2 {
+        padding: 50px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 0 20px;
+    } 
 }
