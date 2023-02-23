@@ -30,9 +30,25 @@ nav {
     height: 200px;
 }
 
+
 .launch {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 35px;
+
+}
+
+.pink { 
+    color: rgb(239, 94, 142);
+}
+
+.button-sign {
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
 /* Desktop */
@@ -51,7 +67,7 @@ nav {
 
     .nav-b a:last-child{
         text-decoration: none;
-        color: rgb(239, 94, 142);
+       color: rgb(239, 94, 142);;
     }
 
     .nav-a {
