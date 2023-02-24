@@ -18,7 +18,7 @@ nav {
     align-items: center;
 }
 
-#logo {
+.logo {
     height: 25px;
 }
 
@@ -111,7 +111,7 @@ gap: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background: lightgrey;
+    background: rgb(234, 233, 233);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -119,6 +119,55 @@ gap: 10px;
 .bid, .price, .remaining {
 justify-self: end;
 }
+
+.series {
+    color: rgb(187, 106, 26);
+}
+
+.nft-name, .price {
+    font-weight: bold;
+    height: 20px;
+}
+
+.section-5 {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+}
+
+.section-5-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-5-pic {
+    background-image: url("assets/upsell-footer-image.svg");
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
+footer {
+    padding: 25px
+} 
+
+.ft-flex-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.contact-links-container {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-link img {
+    
+    height: 15px;
+}
+
 
 /* Desktop */
 
