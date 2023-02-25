@@ -148,7 +148,8 @@ justify-self: end;
 }
 
 footer {
-    padding: 25px
+    padding: 25px;
+
 } 
 
 .ft-flex-1 {
@@ -156,6 +157,11 @@ footer {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+}
+
+.ft-flex-2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contact-links-container {
@@ -168,10 +174,28 @@ footer {
     height: 15px;
 }
 
+.ft-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.ft-grid-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ft-grid-section a {
+    text-decoration: none;
+    color: grey;
+}
+
 
 /* Desktop */
 
-@media ( min-width: 370px){
+@media ( min-width: 480px){
     .nav-b {
         display: flex;
         gap: 10px;
