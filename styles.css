@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     overflow-x: hidden;
+    font-family: 'Montserrat';
+    font-size: 12px;
 }
 
 
@@ -29,10 +31,12 @@ nav {
 .section-1 {
     padding: 50px 25px;
     display: flex;
+    position: relative;
+    width: 250px;
 } 
 
 #graphic {
-    height: 200px;
+width: 200px;
 }
 
 
@@ -40,6 +44,22 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
+ 
+    
+}
+
+.graphic-div {
+    position: relative;
+    width: 200px;
+}
+
+
+.graphic-div img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    height: 350px;
+    width: 300px;
 }
 
 h1 {
@@ -102,6 +122,7 @@ gap: 10px;
 }
 
 .nft {
+    font-size: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -129,22 +150,61 @@ justify-self: end;
     height: 20px;
 }
 
+.price {
+display: flex;
+position: relative;
+}
+
+.eth img {
+    position: absolute;
+    height: max-content;
+    left: -15px;
+    top: -2px;
+
+
+}
+   
+ 
+
+
+
 .section-5 {
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     display: flex;
+   
 }
 
 .section-5-info {
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    gap: 25px;
+}
 
+.info-flex1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.info-flex2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .section-5-pic {
-    background-image: url("assets/upsell-footer-image.svg");
-    background-repeat: no-repeat;
-    width: 50%;
+    position: relative;
+    width: 30%;
+}
+
+.section-5-pic img {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
 }
 
 footer {
@@ -155,7 +215,7 @@ footer {
 .ft-flex-1 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 25px;
     align-items: flex-start;
 }
 
@@ -190,6 +250,12 @@ footer {
 .ft-grid-section a {
     text-decoration: none;
     color: grey;
+}
+
+.ft-flex-1-first {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 
@@ -234,5 +300,19 @@ footer {
 
     .brand:nth-child(4){
         display: block;
+    }
+
+    .ft-flex-1 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .ft-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
     }
 }
