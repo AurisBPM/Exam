@@ -12,6 +12,10 @@ body {
     font-size: 12px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 
 nav {
     padding: 20px;
@@ -32,34 +36,37 @@ nav {
     padding: 50px 25px;
     display: flex;
     position: relative;
-    width: 250px;
+    
+   
 } 
 
-#graphic {
-width: 200px;
-}
+
 
 
 .launch {
     display: flex;
     flex-direction: column;
     gap: 15px;
- 
+    width: 80%;
+
     
+}
+
+.launch p {
+    max-width: 300px;
 }
 
 .graphic-div {
     position: relative;
-    width: 200px;
+    width: 20%;
 }
 
 
 .graphic-div img {
     position: absolute;
+    left: -50px;
     top: -50px;
-    left: 0;
-    height: 350px;
-    width: 300px;
+    height: 250px;
 }
 
 h1 {
@@ -67,8 +74,13 @@ h1 {
 
 }
 
+.h1-container{
+    z-index: 1;
+}
+
 .pink { 
     color: rgb(239, 94, 142);
+    font-weight: bold;
 }
 
 .button-sign {
@@ -84,7 +96,9 @@ border: 2px solid transparent;
 display: flex;
 flex-direction: column;
 gap: 10px;
-background: linear-gradient(45deg, #c924c4, orange, #95ed55);
+background-image: url("assets/background.svg");
+background-position: center;
+background-size: cover;
 } 
 
 .section-3 {
@@ -109,6 +123,7 @@ gap: 10px;
 
 .section-4 h2{
     padding: 10px 0;
+    font-weight: 500;
 } 
 
 .nft-container {
@@ -224,6 +239,10 @@ footer {
     justify-content: space-between;
 }
 
+.ft-flex-2 div:nth-child(2){
+    display: none;
+}
+
 .contact-links-container {
     display: flex;
     gap: 10px;
@@ -261,7 +280,7 @@ footer {
 
 /* Desktop */
 
-@media ( min-width: 480px){
+@media ( min-width: 440px){
     .nav-b {
         display: flex;
         gap: 10px;
@@ -314,5 +333,46 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 15px;
+    }
+
+    .ft-flex-2 div:nth-child(2){
+        display: block;
+    }
+
+    .launch {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 60%;
+    
+        
+    }
+    
+    .graphic-div {
+        position: relative;
+        width: 40%;
+    }
+    
+    
+    .graphic-div img {
+        position: absolute;
+    left: -100px;
+        height: 400px;
+    }
+
+   .h1-container h1 {
+        font-size: 45px;
+    
+    }
+
+    .section-5-pic img {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+        height: 250px;
+    }
+
+    .section-5 {
+        padding-top: 25px;
     }
 }
